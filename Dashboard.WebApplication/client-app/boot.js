@@ -15,7 +15,8 @@ moment.updateLocale('en', {
     },
 });
 const routes = [
-    { path: '/callback', component: require('./components/dashboard/dashboard.vue.html') }
+    { path: '/callback', component: require('./components/dashboard/dashboard.vue.html') },
+    { path: '/management', component: require('./components/management/management.vue.html') },
 ];
 new Vue({
     el: '#app-root',

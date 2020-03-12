@@ -1,0 +1,35 @@
+<style src="./spotify.css"></style>
+<template>
+
+    <div class="tile team-music">    
+        <div class="music__background" v-bind:style="{ backgroundImage: 'url(' + cover + ')' }">
+        </div>    
+        
+        <div>
+                <section :class="[currentlyPlaying ? 'playing' : 'stopped']">
+                        <div class="music__content" >
+                            <div :class="[!hasCover ? 'empty' : 'music__cover']"
+                                 v-bind:style="{ backgroundImage: 'url(' + cover + ')' }">
+                            </div>
+                            
+                            <div class="music__text">
+                                <div class="music__artist">
+                                    {{ artist }}
+                                </div>
+                                <div class="music__track">
+                                    {{ trackName }}
+                                </div>
+                                <span class="music__user">
+                                    <span class="material-icons">queue_music</span>
+                                    {{ userName }}
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </section>
+        </div>
+        
+    </div>
+</template>
+
+<script src="./spotify.ts"></script>

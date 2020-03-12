@@ -1,0 +1,104 @@
+<style src="./header.css"></style>
+<style src="../shared-style/shared-style.css"></style>
+
+<template>
+  <div class="col-md-12 fixed-position header navbar navbar-default" :style="{background: themeColor.color}" >
+
+    <div>  
+      <div class="theme-icon-wrapper">
+
+        <ul class="nav navbar-nav">
+
+          <li class="dropdown">
+
+            <a data-toggle="dropdown" href="#">            
+              <img src="../../../wwwroot/img/icons/rainbow-icon.png" class="theme-selector-icon"/>              
+            </a>
+
+            <ul class="dropdown-menu" >
+                  <ul v-for="theme in themes" class="themes-ul"> 
+
+                    <li @click="setTheme(theme)">
+                      <span>
+                        <i :style="{ color: theme.color }" class="fa fa-circle" aria-hidden="true"></i> {{ theme.name }}
+                      </span>
+                    </li>                               
+                  
+                  </ul>               
+            </ul>              
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="drop navbar-collapse navbar-right navbar-responsive-collapse" style="position: absolute; right: 0px; top: 0px;">
+
+        <ul class="nav navbar-nav">
+
+          <li class="dropdown">
+
+            <a v-if="!authenticated" class="login-btn" href="#" @click="auth.login()" style="margin-top: 1px !important; font-weight: bolder;" :style="{color: themeColor.text}">              
+                  <i class="fa fa-fw fa-power-off"></i>
+                  <span class="link-text"> logoff </span>
+            </a>
+
+            <a :style="{color: themeColor.text}" v-if="authenticated" class="dropdown-toggle" data-toggle="dropdown"> 
+              <img :src="userProfile.picture" class="user-image-small"> 
+              <span class="hidden-xs"> {{ userProfile.name }} <b class="caret"></b></span>
+            </a>
+
+            <ul class="dropdown-menu dropwrapper">
+              <div class="panel">
+                <div class="panel-body">
+                  <ul>
+                  
+                  <li>
+                    <img :src="userProfile.picture" class="user-image">
+                    <p>  {{ userProfile.name }} </p>
+                  </li>                     
+                  
+                  <li><a href="#">Placeholder 1</a></li>
+                  <li><a href="#">Placeholder 2</a></li>
+                  
+                  <li class="divider"></li>
+
+                  <li class="visible-xs">
+
+                    <ul class="dropdown">
+                      <li>
+                        <router-link to="/vehicle/new" :exact="true" class="btn btn-link">
+                          <span><i class="material-icons">note_add</i></span> New
+                        </router-link>
+
+                        <router-link to="/fetchdata" :exact="true" class="btn btn-link">
+                          <span><i class="material-icons">list</i></span> Vehicles
+                        </router-link>
+                      </li>
+                    </ul>
+
+                  </li>
+                  
+                  </ul>               
+                </div>  
+           
+                <a @click.prevent="auth.logout()" href="#" class="btn btn-xs btn-block btn-primary" > 
+                  <span class="link-text icon">Logout</span>  
+                  <span><i class="icon fa fa-fw fa-power-off"></i></span>                  
+                  
+                </a>               
+                 
+              </div>
+            </ul>              
+
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+</template>
+
+<script src="./header.ts"></script>

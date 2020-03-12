@@ -1,0 +1,18 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content-shared::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.content-shared {
+    -ms-overflow-style: none;
+    background-color: red;
+    height: 112%;
+    overflow: auto;
+}
+
+.icon {
+    position: relative;
+    top: 1px;
+    left: 5px;
+}

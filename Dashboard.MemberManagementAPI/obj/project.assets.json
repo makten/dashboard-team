@@ -10607,7 +10607,6 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hafiz\\PROJECTS\\TOPICUS\\Horizon\\Dashboard\\Dashboard.MemberManagementAPI\\NuGet.Config",
         "C:\\Users\\Hafiz\\PROJECTS\\TOPICUS\\Horizon\\Dashboard\\NuGet.Config",
         "C:\\Users\\Hafiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

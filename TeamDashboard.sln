@@ -32,6 +32,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.TimeService", "Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.MemberManagementAPI", "Dashboard.MemberManagementAPI\Dashboard.MemberManagementAPI.csproj", "{BD38ACB3-969F-4EA9-9305-F2A82F68C64C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serve.WebApplication", "Serve.WebApplication\Serve.WebApplication.csproj", "{4A5FDA8F-B738-4E83-B214-223575AE82F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{BD38ACB3-969F-4EA9-9305-F2A82F68C64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD38ACB3-969F-4EA9-9305-F2A82F68C64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD38ACB3-969F-4EA9-9305-F2A82F68C64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5FDA8F-B738-4E83-B214-223575AE82F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5FDA8F-B738-4E83-B214-223575AE82F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5FDA8F-B738-4E83-B214-223575AE82F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5FDA8F-B738-4E83-B214-223575AE82F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{4EF3C0F0-A17F-4C15-A06F-6E6B88FB21BA} = {43829335-4977-4811-923D-53D9B613DE52}
 		{B2863C9B-BEA9-4C84-9FD3-4C901E9C4929} = {43829335-4977-4811-923D-53D9B613DE52}
 		{BD38ACB3-969F-4EA9-9305-F2A82F68C64C} = {5DF54110-C4C8-4B74-A059-3750C67663A3}
+		{4A5FDA8F-B738-4E83-B214-223575AE82F2} = {746DA2DA-2D86-4964-9C43-800802287BE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {158D6425-106D-4BEA-BAA0-20C227C2B6BE}

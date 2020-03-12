@@ -53,7 +53,7 @@ namespace AspNetCore
             WriteLiteral("\r\n<div id=\"app-root\">Loading...</div>\r\n\r\n");
             DefineSection("scripts", async() => {
                 WriteLiteral("\r\n    \r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3187ba2a01059bb5dae302947031ac2e3fc70db3525", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3187ba2a01059bb5dae302947031ac2e3fc70db3549", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

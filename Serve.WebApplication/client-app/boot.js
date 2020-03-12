@@ -1,0 +1,52 @@
+import 'bootstrap';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import axios from 'axios';
+Vue.use(VueRouter);
+import moment from 'moment';
+moment.updateLocale('nl', {
+    calendar: {
+        lastDay: '[Yesterday]',
+        sameDay: '[Today]',
+        nextDay: '[Tomorrow]',
+        lastWeek: '[last] dddd',
+        nextWeek: 'dddd',
+        sameElse: 'L',
+    },
+});
+const routes = [
+    { path: '/dashboard', component: require('./components/dashboard/dashboard.vue.html') },
+    { path: '/', component: require('./components/dashboard/dashboard.vue.html') },
+    { path: '/callback', name: 'auth', component: require('./services/authentication/callback.vue.html') },
+];
+new Vue({
+    el: '#app-root',
+    router: new VueRouter({ mode: 'history', routes: routes }),
+    created() {
+    },
+    mounted() {
+        window.setInterval(() => {
+            this.getCurrentlyPlaying();
+        }, 4000);
+        // this.$router.beforeEach((to, from, next) => {
+        //     if (to.path === '/vehicle/new') {
+        //         if (globals.auth.hasRole('Admin')) {
+        //             next();
+        //         }
+        //         else {
+        //             next(from.path);
+        //         }
+        //     }
+        //     else {
+        //         next();
+        //     }
+        // })
+    },
+    methods: {
+        getCurrentlyPlaying() {
+            axios.get("api/FetchCurrentTrack").then(r => { }).catch();
+        }
+    },
+    render: (h) => h(require('./components/app/app.vue.html'))
+});
+//# sourceMappingURL=boot.js.map
