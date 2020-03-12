@@ -30,7 +30,7 @@
     "@types/jquery": "^3.3.31",
     "@types/lodash": "^4.14.73",
     "auth0-js": "^8.9.1",
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "bootstrap-material-design": "^0.5.10",
     "chart.js": "^2.6.0",
     "chartjs": "^0.3.24",
