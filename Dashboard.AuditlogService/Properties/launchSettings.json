@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AuditlogService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Dashboard_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

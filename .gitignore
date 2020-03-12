@@ -1,0 +1,7 @@
+node_modules
+**/node_modules
+.vs/Dashboard/DesignTimeBuild/.dtbcache
+
+.vs/Dashboard/DesignTimeBuild/
+
+.vs/Dashboard/v16/Server/sqlite3/

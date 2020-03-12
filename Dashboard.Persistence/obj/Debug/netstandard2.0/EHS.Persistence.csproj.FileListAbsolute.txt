@@ -1,0 +1,5 @@
+M:\PROJECTS\Wumnaya.Dashboard\Dashboard.Persistence\bin\Debug\netstandard2.0\Dashboard.Persistence.deps.json
+M:\PROJECTS\Wumnaya.Dashboard\Dashboard.Persistence\bin\Debug\netstandard2.0\Dashboard.Persistence.dll
+M:\PROJECTS\Wumnaya.Dashboard\Dashboard.Persistence\obj\Debug\netstandard2.0\Dashboard.Persistence.csprojAssemblyReference.cache
+M:\PROJECTS\Wumnaya.Dashboard\Dashboard.Persistence\obj\Debug\netstandard2.0\Dashboard.Persistence.AssemblyInfoInputs.cache
+M:\PROJECTS\Wumnaya.Dashboard\Dashboard.Persistence\obj\Debug\netstandard2.0\Dashboard.Persistence.AssemblyInfo.cs

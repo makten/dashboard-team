@@ -1,0 +1,8 @@
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\bin\Release\netstandard2.0\Dashboard.Infrastructure.deps.json
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\bin\Release\netstandard2.0\Dashboard.Infrastructure.dll
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\bin\Release\netstandard2.0\Dashboard.Infrastructure.pdb
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\obj\Release\netstandard2.0\Dashboard.Infrastructure.csprojAssemblyReference.cache
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\obj\Release\netstandard2.0\Dashboard.Infrastructure.AssemblyInfoInputs.cache
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\obj\Release\netstandard2.0\Dashboard.Infrastructure.AssemblyInfo.cs
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\obj\Release\netstandard2.0\Dashboard.Infrastructure.dll
+M:\PROJECTS\Dashboard\Dashboard.Infrastructure\obj\Release\netstandard2.0\Dashboard.Infrastructure.pdb
