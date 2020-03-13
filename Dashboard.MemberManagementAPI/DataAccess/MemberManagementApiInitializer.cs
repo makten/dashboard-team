@@ -20,15 +20,15 @@ namespace Dashboard.MemberManagementAPI.DataAccess
         {
             context.Database.EnsureCreated();
 
-            if (context.Customers.Any())
+            if (context.Members.Any())
             {
                 return; // we are seeded
             }
 
-            SeedCustomers(context);
+            SeedMembers(context);
         }
 
-        private void SeedCustomers(MemberManagementDbContext context)
+        private void SeedMembers(MemberManagementDbContext context)
         {
             var customers = new[]
             {
@@ -72,7 +72,7 @@ namespace Dashboard.MemberManagementAPI.DataAccess
 
             };
 
-            context.Customers.AddRange(customers);
+            context.Members.AddRange(customers);
             context.SaveChanges();
         }
 

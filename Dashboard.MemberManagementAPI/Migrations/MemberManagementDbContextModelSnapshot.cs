@@ -52,7 +52,7 @@ namespace Dashboard.MemberManagementAPI.Migrations
 
                     b.HasKey("MemberId");
 
-                    b.ToTable("Customer");
+                    b.ToTable("Member");
                 });
 #pragma warning restore 612, 618
         }

@@ -28,9 +28,9 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
 COPY --from=build-env /app/out .
 
 # Expose our ports
-EXPOSE 7000/tcp
-ENV ASPNETCORE_URLS http://*:7000
-HEALTHCHECK --interval=30s --timeout=3s --retries=1 CMD curl --silent --fail http://localhost:7000/hc || exit 1
+EXPOSE 8000/tcp
+ENV ASPNETCORE_URLS http://*:8000
+HEALTHCHECK --interval=30s --timeout=3s --retries=1 CMD curl --silent --fail http://localhost:8000/hc || exit 1
 
 # START
 ENTRYPOINT ["dotnet", "Serve.WebApplication.dll"]

@@ -19,12 +19,6 @@ let DashboardComponent = class DashboardComponent extends Vue {
                 title: "Dashboard",
                 link: "/",
                 active: true
-            },
-            {
-                icon: '<i class="material-icons md-48" aria-hidden="true">group_add</i>',
-                title: "Customers",
-                link: "/api/customers",
-                active: false
             }
         ];
         this.forAdmin = [

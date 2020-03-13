@@ -15,14 +15,14 @@ namespace Dashboard.MemberManagementAPI.Repository
         }
         public async Task<ICollection<Member>> GetAllAsync()
         {
-            var response  = await _dbContext.Customers.ToListAsync();
+            var response  = await _dbContext.Members.ToListAsync();
 
             return response;
         }
 
         public async Task<Member> GetByIdAsync(int id)
         {
-            return await _dbContext.Customers
+            return await _dbContext.Members
                 .FirstOrDefaultAsync(c => c.MemberId == id);
         }
         

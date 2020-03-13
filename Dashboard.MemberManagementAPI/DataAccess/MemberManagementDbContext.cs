@@ -11,12 +11,12 @@ namespace Dashboard.MemberManagementAPI.DataAccess
         {
         }
 
-        public DbSet<Member> Customers { get; set; }
+        public DbSet<Member> Members { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Member>().HasKey(p => p.MemberId);
-            builder.Entity<Member>().ToTable("Customer");
+            builder.Entity<Member>().ToTable("Member");
 
             base.OnModelCreating(builder);
         }

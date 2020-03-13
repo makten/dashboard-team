@@ -37,6 +37,7 @@ MainDashboardComponent = __decorate([
             spotifyComponent: require('../music/spotify.vue.html'),
             FooterComponent: require('../footer/footer.vue.html'),
             HomeComponent: require('../home/home.vue.html'),
+            ManagementComponent: require('../management/management.vue.html'),
         }
     })
 ], MainDashboardComponent);

@@ -60,7 +60,7 @@ namespace Dashboard.MemberManagementAPI.Controllers
                 {
                     // insert person
                     Member member = Mapper.Map<Member>(command);
-                    _dbContext.Customers.Add(member);
+                    _dbContext.Members.Add(member);
                     await _dbContext.SaveChangesAsync();
 
                     // send event

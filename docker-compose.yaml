@@ -42,13 +42,24 @@ services:
   # main api's services
 
   membermanagementapi:
-    image: dashboard/memembermanagementapi:latest
+    image: dashboard/membermanagementapi:latest
     build: Dashboard.MemberManagementAPI
     depends_on:
       - rabbitmq
       - sqlserver
     ports:
       - "5100:5100"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production 
+      
+  hdnmanagementapi:
+    image: dashboard/hdnmanagementapi:latest
+    build: Dashboard.HDNManagementAPI
+    depends_on:
+      - rabbitmq
+      - sqlserver
+    ports:
+      - "5200:5200"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production   
 
@@ -58,8 +69,22 @@ services:
     container_name: WebApplication
     depends_on:
       - membermanagementapi      
+      - hdnmanagementapi      
     ports:
       - "7000:7000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  webappserve:
+    image: server/webapplication:latest
+    build: Serve.WebApplication
+    container_name: ServeWebApplication
+    depends_on:
+      - membermanagementapi
+      - hdnmanagementapi
+      - webapp
+    ports:
+      - "8000:8000"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 

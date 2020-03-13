@@ -9,3 +9,7 @@ services:
   membermanagementapi:
     ports:
       - "5100:5100"
+      
+  hdnmanagementapi:
+    ports:
+      - "5200:5200"

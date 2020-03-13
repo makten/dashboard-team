@@ -43,12 +43,20 @@ let DashboardComponent = class DashboardComponent extends Vue {
         this.newTODO = new Form({ title: '', sprintCode: '', description: '', goalStart: '', goalEnd: '', done: false, teamMemberId: '' });
         this.newEnvironment = new Form({ clientGroupId: '', clientgroup: null, name: '', description: '', extraDetails: '' });
         this.storyCodes = [
-            "FRC-67121",
-            "FRC-37677",
-            "FRC-67885",
-            "FRC-435343",
+            "MGSYN-OV-FRC01",
+            "MGSYN-OV-FRC08",
+            "MGSYN-OV-FRC08",
+            "MGING-OV-FRC16",
+            "MGING-OV-FRC16",
+            "MGRAB-OV-FRC03",
+        ];
+        this.clientLabels = [
+            "Attens",
+            "Tellius",
+            "Syntrus"
         ];
         this.selectedCode = "";
+        this.selectedLabel = "";
         this.todoList = [];
         this.environments = [];
         this.clients = [];
